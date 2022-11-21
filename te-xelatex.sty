@@ -1,0 +1,30 @@
+% this is my first package
+% 
+% (c) Timothy Elder
+%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN archives
+%% in directory macros/latex/base/lppl.txt.
+% 
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{mypackage}
+  [2011/01/11 v0.01 LaTeX package for my own purpose]
+
+  \documentclass[11pt,article,oneside]{memoir}
+  \usepackage{multicol,caption}
+  \usepackage{fontspec}
+  \RequirePackage[colorlinks=true, linkcolor=blue, filecolor=blue, urlcolor=blue,
+  citecolor = blue]{hyperref}
+    \urlstyle{same}
+  
+  \newenvironment{Figure}
+    {\par\medskip\noindent\minipage{\linewidth}}
+    {\endminipage\par\medskip}
+  
+  \setromanfont[Mapping=tex-text,Numbers=OldStyle]{Minion Pro} 
+  \setsansfont[Mapping=tex-text]{Myriad Pro} 
+  \setmonofont[Mapping=tex-text,Scale=0.8]{Futura}
+
+\endinput
+%%
+%% End of file `mypackage.sty'.

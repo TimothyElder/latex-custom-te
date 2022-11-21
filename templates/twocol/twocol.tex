@@ -1,0 +1,30 @@
+\documentclass{memoir}
+\usepackage{multicol,caption}
+\usepackage[demo]{graphicx}
+%\usepackage{fontspec}
+\usepackage{lipsum}
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+\title{My Paper}
+\author{tim}
+\date{}
+
+\begin{document}
+
+\maketitle
+\begin{multicols}{2}
+
+\lipsum[2-8]
+
+\begin{Figure}
+ \centering
+ \includegraphics[width=\linewidth]{foo}
+ \captionof{figure}{my caption of the figure}
+\end{Figure}
+
+\lipsum[1]
+
+\end{multicols}
+\end{document}
