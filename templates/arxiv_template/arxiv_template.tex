@@ -1,9 +1,5 @@
 \documentclass{article}
-
-
-
 \usepackage{arxiv}
-
 \usepackage[utf8]{inputenc} % allow utf-8 input
 \usepackage[T1]{fontenc}    % use 8-bit T1 fonts
 \usepackage{hyperref}       % hyperlinks
@@ -12,12 +8,10 @@
 \usepackage{amsfonts}       % blackboard math symbols
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
-\usepackage{lipsum}		% Can be removed after putting your text content
+\usepackage{lipsum}		    % Can be removed after putting your text content
 \usepackage{graphicx}
 \usepackage{natbib}
 \usepackage{doi}
-
-
 
 \title{A template for the \emph{arxiv} style}
 
@@ -85,86 +79,986 @@ pdfkeywords={First keyword, Second keyword, More},
 \keywords{First keyword \and Second keyword \and More}
 
 
-\section{Introduction}
-\lipsum[2]
-\lipsum[3]
+Status and Subfield:
 
+The Distribution of Sociological Specializations across Departments
 
-\section{Headings: first level}
-\label{sec:headings}
+Timothy B. Elder
 
-\lipsum[4] See Section \ref{sec:headings}.
+Austin C. Kozlowski
 
-\subsection{Headings: second level}
-\lipsum[5]
-\begin{equation}
-	\xi _{ij}(t)=P(x_{t}=i,x_{t+1}=j|y,v,w;\theta)= {\frac {\alpha _{i}(t)a^{w_t}_{ij}\beta _{j}(t+1)b^{v_{t+1}}_{j}(y_{t+1})}{\sum _{i=1}^{N} \sum _{j=1}^{N} \alpha _{i}(t)a^{w_t}_{ij}\beta _{j}(t+1)b^{v_{t+1}}_{j}(y_{t+1})}}
-\end{equation}
+University of Chicago
 
-\subsubsection{Headings: third level}
-\lipsum[6]
+ABSTRACT:
 
-\paragraph{Paragraph}
-\lipsum[7]
+This study takes the well-established finding that sociology departments
+are ordered by a stable status hierarchy and investigates the
+implications of this hierarchy for the discipline's subfields. Using
+data drawn from the 2020 American Sociological Association's \emph{Guide
+to Graduate Departments}, we show that subfields are not uniformly
+distributed across departments, but that certain subfields are
+over-represented in elite departments while others are concentrated in
+lower prestige institutions. We show that this ``status ordering of
+subfields'' is tightly linked to key characteristics of the subfields
+and their researchers. Most notably, subfields that are male-dominated
+and theoretically-oriented are more highly represented at elite
+departments than those that are more feminized or practically-oriented.
+We also provide provisional evidence that subfields with greater African
+American membership are concentrated at lower status institutions while
+subfields with a higher proportion Asian membership tend to be
+consolidated at elite departments. We conclude with a discussion of
+potential implications for the research and researchers disadvantaged by
+this implicit ordering.
 
+\textbf{\uline{Introduction:}}
 
+Sociology has a history of diagnosing inequities embedded in
+institutions and analyzing how such disparities and the systems of power
+within which they emerge shape the production of knowledge. These
+disciplinary strengths position sociology to be a uniquely ``reflexive''
+science, potentially capable of interpreting the conditions of its own
+knowledge production with greater clarity than other sciences (Bourdieu
+1988). In some respects, sociology does appear to be spared some of the
+clearest scientific inequalities apparent in other disciplines;
+sociology has near gender parity among faculty (American Sociological
+Association 2020; Scelza, Spalter-Roth, and Mayorova 2011) and awards a
+higher percentage doctorates to African American and Hispanic/Latino
+students than economics or political science (National Science
+Foundation 2020). Yet, this characterization of the discipline as a
+whole masks its internal differentiation. Sociology is a fragmented
+field, with relatively autonomous subfields pursuing distinct sets of
+questions by a variety of methodologies. Hierarchies of status,
+reputation, and authority are well documented \emph{between} scientific
+disciplines, but similar hierarchies may also manifest \emph{within}
+highly differentiated disciplines (Abbott 2001).
 
-\section{Examples of citations, figures, tables, references}
-\label{sec:others}
+The purpose of this study is to investigate the status ordering of
+sociology's subfields and to identify how this ordering relates to the
+scholarly features of those subfields and the socio-demographic
+characteristics of the researchers who pursue them. Drawing upon
+complete faculty listings for more than 100 sociology departments as
+published in the 2020 edition of the American Sociological Association's
+(ASA) \emph{Guide to Graduate Departments}, we find that the
+distribution of subfields across departments is intimately tied to the
+durable departmental status ordering, with some subfields concentrated
+in elite institutions and others in lower status departments.
+Furthermore, we find that subfields that are more male and more
+theoretical tend to be located in higher status departments than those
+that are feminized or practically oriented. These findings illuminate a
+status hierarchy in sociological knowledge production that typically
+remains implicit, and aims to advance how we understand the social
+conditions of our own knowledge production as well as the ways in which
+certain researchers and fields of inquiry remain structurally
+marginalized.
 
-\subsection{Citations}
-Citations use \verb+natbib+. The documentation may be found at
-\begin{center}
-	\url{http://mirrors.ctan.org/macros/latex/contrib/natbib/natnotes.pdf}
-\end{center}
+\textbf{\uline{Theoretical Framework:}}
 
-Here is an example usage of the two main commands (\verb+citet+ and \verb+citep+): Some people thought a thing \citep{kour2014real, hadash2018estimate} but other people thought something else \citep{kour2014fast}. Many people have speculated that if we knew exactly why \citet{kour2014fast} thought this\dots
+\emph{Science and Status}
 
-\subsection{Figures}
-\lipsum[10]
-See Figure \ref{fig:fig1}. Here is how you add footnotes. \footnote{Sample of the first footnote.}
-\lipsum[11]
+Status plays a central role in the institution of science, particularly
+as it is carried out in universities (Merton 1979 {[}1942{]}). High
+status departments aim to hire faculty with strong reputations for
+scholarly excellence and promising prospects for future contributions,
+with the hope that such successful hires will raise the department's
+standing. Researchers, receiving no remuneration for publishing in
+academic journals or amassing citations, are incentivized to produce
+impactful research because of the gain in personal status. Indeed, in
+fields where many researchers rarely acquire large external grants, the
+only direct way a university benefits from its faculty's publications
+lies in the gains to prestige associated with their research. Thus, in
+the idealized model, prestige serves as a mechanism for meritocracy in
+science.
 
-\begin{figure}
-	\centering
-	\fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
-	\caption{Sample figure caption.}
-	\label{fig:fig1}
-\end{figure}
+However, a vast literature examining science and beyond, consistently
+finds that status is not a pure reflection of achievement or scholarly
+contribution, but is predictably concentrated within certain areas of
+work and certain subpopulations (Gauchat and Kenneth 2018). For example,
+work that is more manual, practical, and feminized is found to be lower
+status than work that is perceived to be more cerebral, creative, and
+masculine, with nursing and doctoring being key examples of such a
+relationship (Allen 1997). This devaluing of feminized and practical
+work has potential implications for the resources allocated to these
+areas, the attention it garners, and the experiences of researchers in
+these fields. The further possibility of scientific ``blind-spots'' due
+to the devaluing of ``feminized'' areas of science can have further
+consequences for the advancement of questions of social importance.
 
-\subsection{Tables}
-See awesome Table~\ref{tab:table}.
+While previous research has documented prestige differences between
+disciplines, there is reason to expect that similar patterns of status
+differentiation exist \emph{within} disciplines. Abbott (2001) argues
+that the social organization of scientific fields should be understood
+as following fractal geometry, with self-similar patterns of opposition
+repeating within subfields nested within fields. Bourdieu (1984)
+similarly described social spaces with a nested geometry, with the
+patterns of opposition structuring differences within institutions
+mirroring those patterns of opposition that structure differences
+between institutions. Moreover, his analysis of the French social
+sciences in the 1960s suggested that status hierarchies manifest not
+only between fields, like philosophy and sociology, but within the
+fields themselves (Bourdieu 1988). Although many of the differentiations
+associated with status hierarchies \emph{between} disciplines are
+reproduced within disciplines, there has been little systematic
+investigation of how these hierarchies manifest between the subfields of
+a single discipline.
 
-The documentation for \verb+booktabs+ (`Publication quality tables in LaTeX') is available from:
-\begin{center}
-	\url{https://www.ctan.org/pkg/booktabs}
-\end{center}
+\emph{The Subfields of Sociology}
 
+Sociology serves as a uniquely instructive case for the analysis of
+intra-disciplinary status orders. Sociology is a highly differentiated
+field, encompassing a broad and loosely connected array of topics,
+methodologies, and theoretical orientations. Unlike economics which is
+primarily ordered around a theoretical framework (rational-choice),
+anthropology which is ordered around a methodological intervention
+(ethnography) and political science which is ordered around a topical
+area (politics), sociology is oriented to a loose set of areas of
+interests and several competing theoretical frameworks. The internal
+differentiation of the discipline into different areas of research
+interests is further organized by the characteristics of the researchers
+that comprise those areas.
 
-\begin{table}
-	\caption{Sample table title}
-	\centering
-	\begin{tabular}{lll}
-		\toprule
-		\multicolumn{2}{c}{Part}                   \\
-		\cmidrule(r){1-2}
-		Name     & Description     & Size ($\mu$m) \\
-		\midrule
-		Dendrite & Input terminal  & $\sim$100     \\
-		Axon     & Output terminal & $\sim$10      \\
-		Soma     & Cell body       & up to $10^6$  \\
-		\bottomrule
-	\end{tabular}
-	\label{tab:table}
-\end{table}
+The basic tenet of the sociology of science is that the formation of
+knowledge is conditioned and channeled by the social conditions of
+knowledge production. The kinds of claims that are made, the standards
+of validity, and the evaluation of knowledge's value are all influenced
+by the historical context of knowledge production and the social
+position of those producing that knowledge (Bourdieu 1988; Collins 1998;
+Shapin 1994; Latour 1999). To practice a truly reflexive sociology, it
+is critical that sociologists consider the social organization of their
+own knowledge production. Bourdieu posited that sociology is a uniquely
+equipped science able to develop a reflexive practice which incorporates
+in its knowledge production an understanding of its own social
+situatedness. This study aims to advance reflexive social science by
+providing a systematic description of the relations between subfields of
+sociological knowledge and the social positions of the researchers that
+compose them.
 
-\subsection{Lists}
-\begin{itemize}
-	\item Lorem ipsum dolor sit amet
-	\item consectetur adipiscing elit.
-	\item Aliquam dignissim blandit est, in dictum tortor gravida eget. In ac rutrum magna.
-\end{itemize}
+Lastly, a central concern of contemporary sociology is the
+identification of systemic inequalities embedded within institutions.
+Yet sociologists have dedicated relatively little attention to the
+inequalities embedded in the discipline itself. Previous researchers
+have shown a durable status hierarchy in sociology departments that has
+largely persisted for the past century and which tightly structures
+hiring between institutions (Burris 2004, Weakliem et a. 2011). However,
+there has been no systematic investigation into whether this status
+ordering of departments relates to sociology's differentiated areas of
+research. By empirically rendering the relationship between this
+well-documented status hierarchy of departments and areas of
+sociological inquiry, this study aims to identify which domains of
+sociological research are marginalized and which are privileged in the
+American university system.
 
+\textbf{\uline{Data:}}
+
+We analyze data collected by the American Sociological Association (ASA)
+between October and December 2019 and published in the 2020 edition of
+the \emph{American Sociological Association's Guide to Graduate
+Departments}. The \emph{Guide}, published each year by the ASA, provides
+current overviews of almost 200 graduate departments of sociology,
+including a complete roster of the current faculty and listing each
+individual's PhD institution and subfields of study.
+
+We limit our analysis to full-time faculty (excluding emeritus, adjunct,
+and joint-appointed faculty) at PhD-granting departments at universities
+in the United States, resulting in 2084 faculty across 111 universities.
+The overwhelming majority of PhD granting departments submit their
+faculty listings to the ASA \emph{Guide} each year; comparing the list
+of PhD institutions of current faculty listed in the \emph{Guide}, we
+find that 90.2\% of the faculty in our dataset obtained their PhDs from
+one of the departments in the Guide\footnote{It is important to note
+  that a small fraction of the Sociologists in our dataset received
+  their PhD from non-US sociology departments, or from a
+  non-sociological discipline. Our coverage of 90.2\% is calculated
+  taking into account only the focal departments which constitute our
+  analyses, these being PhD granting departments in Sociology located in
+  the US.}. This makes the \emph{Guide} a powerful but underutilized
+resource for analyzing the relationship between individual researchers,
+departments, and subfields in American sociology.
+
+We begin by constructing a status ordering of sociology departments
+following the approach used by Burris (2004). Burris conceptualized the
+status ordering of departments as instantiated in the network of
+exchanges of PhD graduates between departments. For each faculty member,
+the ASA guide lists their current institution as well as their PhD
+institution. Following Burris, we use this data to construct a directed
+graph of PhD exchange, then use eigenvector centrality as a proxy for
+department status (Bonacich 1987). We correlate this statistic with the
+department scores collected by US News and World Report's 2020 survey of
+current sociology faculty and find that the two measures correlate at a
+level of 0.84.
+
+The subfields of research interest listed in the \emph{Guide} closely
+(but imperfectly) mirror the set of formal ASA ``sections.'' When a
+research interest listed for a faculty member does not explicitly
+reference a section in the American Sociological Association we code the
+research area into the most likely candidate section. The two authors of
+this paper independently coded each interest and deliberated to achieve
+consensus on those interests that produced divergent codes (less than
+5\%).
+
+Having measured ``departmental status scores,'' we proceed to identify
+``subfield status scores,'' which capture the differential
+representation of subfields across the departmental prestige hierarchy.
+We produce this measure of subfield status by assigning each researcher
+the prestige score of their current institution, then, for each
+subfield, calculating the average prestige score of all researchers who
+list this subfield among their interests. Thus, subfields that are
+disproportionately represented among high status departments will earn a
+higher ``subfield status score'' than those subfields predominantly
+studied in lower status departments.
+
+It is important to clarify that these subfield status scores do not
+necessarily correspond to any socially shared subjective assessment of
+subfields. Our measure of departmental status, by contrast, does appear
+to correspond to subjective assessments, given its strong correlation
+with the results from US News and World Report's survey of current
+sociologists. However, we have no comparable subjective evaluation of
+subfield prestige for comparison. Instead, we limit our analyses to the
+systematic distribution of subfields across departments. Our claims
+regarding ``subfield status'' are therefore not about subjective
+assessments of subfield prestige, but the differential representation of
+subfields across a departmental hierarchy that is measurable both
+structurally (through PhD exchange networks) and inter-subjectively
+(through surveying sociologists).
+
+After identifying the status distribution of subfields, we assess the
+relationship of this ordering to several social attributes that are
+commonly intertwined with status. First, we assess the relationship
+between a subfield's status position and its gender composition.
+Feminist scholarship has long shown that objects and practices
+associated with women are consistently devalued across a variety of
+domains, including work (Reskin and Bielby, 2005), entertainment, art,
+and modes of self-presentation (Goffmann, 1977). Studies of science also
+consistently find that areas of inquiry with greater percentage women
+tend to be discounted and devalued (Rawlings and Bourgeois 2004). To
+assess the relationship between a subfield's gender composition and
+status, we collect data on the percentage male in each subfield from the
+ASA's website.\footnote{The gender categories listed in ASA data are
+  ``male,'' ``female,'' ``transgender,'' ``non-binary,'' and ``other.''
+  We adopt this exact terminology to remain consistent with the data.}
+Our analyses specifically use gender composition of ``regular members''
+in each section, which excludes students and is therefore more
+consistent with the measures we draw from the ASA Guide.
+
+Prior research suggests that work performed by gender minorities
+including transgender, nonbinary, and gender non-conforming researchers
+may similarly suffer lower status relative work associated with cis men.
+Although ASA does measure gender minority identities in 2019, the size
+of this subpopulation is too small for robust statistical inference.
+Because prior theory and our own provisional evidence suggest that
+gender minority status is generally associated with disadvantaged status
+positions relative cis men, we operationalize gender composition as
+``percent men,'' effectively pooling women and gender minorities.
+
+We also assess whether the status ordering of subfields is associated
+with the average age of its researchers. Like many institutions,
+university departments privilege senior members over junior members.
+Junior faculty lack tenure and occupy a more precarious position than
+their senior colleagues. Senior faculty have also enjoyed more time to
+build a professional reputation, accrue social capital, and shape their
+department and the discipline in alignment with their own visions. For
+these reasons, it is plausible that subfields populated by younger
+scholars would be concentrated at lower prestige departments than those
+occupied by older faculty. We calculate the ``average age'' for each
+subfield by subtracting each faculty member's year of PhD graduation
+from 2020 then calculating the mean within subfields.
+
+In addition to researcher characteristics like gender and age, we also
+consider scholarly attributes of the subfields that have been linked to
+status distinctions. First, we consider the quantitative/qualitative
+methodological divide that deeply structures sociological knowledge
+production. Research on legitimacy in science consistently finds
+quantification is a common technique to improve the legitimacy of a
+claim, with quantification bestowing an air of impartiality,
+objectivity, and scientism. To measure the association of subfields with
+quantitative or qualitative methodologies, we count each subfield's
+co-occurrence with ``quantitative methodology'' and ``qualitative
+methodology'' among faculty's listed interests in the ASA Guide. We then
+calculate a ``percent quantitative'' estimate by dividing the total
+number of quantitative overlaps by the sum of quantitative and
+qualitative overlaps for each subfield. Some of the smaller subfields
+exhibit only one or two overlaps with quantitative or qualitative
+methodology among their practitioners, producing fragile estimates. To
+improve estimation, we treat Ethnomethodology \& Conversation Analysis
+as qualitative methodology and Mathematical Sociology as quantitative
+methodology, and add overlaps with these two subfields to our
+qualitative and quantitative totals, respectively. We believe this
+analytic decision improves estimation of the ``quantitativeness'' of the
+subfields, but refraining from this pooling step and simply dropping
+cases that have fewer than 3 overlaps produces substantively identical
+findings.
+
+Lastly, we consider whether the subfield is more theoretical or
+practical in nature. Theories of status from Veblen to Bourdieu
+emphasize that distance from toil and drudgery has historically been
+central to demonstrations of privilege. Studies of science confirm that
+areas of inquiry associated with technical, manual, and practical work
+are commonly subordinated to more ``pure'' fields of research. In an
+analysis of the differentiation of university agriculture programs in
+the early 20th century, Rawlings and Bourgeois (2004) show that a
+division of studies into research-oriented, ``disinterested'' fields and
+technical fields oriented towards addressing community issues
+corresponded with a movement of higher prestige departments to
+legitimize these more theoretical domains as rightly ``scientific.'' To
+capture such a practical/theoretical differentiation in sociology, we
+count each subfield's co-occurrence with ``Theory'' and with
+``Sociological Practice and Public Sociology'' among faculty interests,
+and create a Theoretical Score by dividing the number of ``Theory''
+overlaps by the sum of ``Theory'' and ``Sociological Practice''
+overlaps.
+
+\textbf{\uline{Results:}}
+
+We begin our analysis by showing that research in the subfields of
+sociology is patterned by the status of departments. In Figure 1, we
+plot the average departmental status for researchers in each subfield,
+along with the median and interquartile range. Because subfield status
+is operationalized as the mean departmental status of researchers in
+that subfield, we can directly compare these subfield status scores to
+departmental status scores. We find that the score of roughly 0.4 among
+the highest status subfields corresponds to well endowed, high profile
+departments ranked in the top 10 by US News and World Report. By
+contrast, the score of approximately 0.1 among the lowest status
+subfields corresponds with large public R2 universities. This means that
+the average researcher in one of the highest status subfields is likely
+to be located in an elite R1 school, whereas the average researcher in a
+lower status subfield is more likely to be located in a public R2
+school.
+
+\textbf{Figure 1.} Mean, median and interquartile range of departmental
+status for each subfield, with number of faculty listing each subfield
+as an interest in 2020.
+
+\includegraphics[width=6.65885in,height=4.59196in]{media/image2.png}
+
+\emph{Note:} Dots represent means, vertical lines represent medians.
+
+Sociology's subfields do not exist independently but cluster together
+into common groupings based on shared topics as well demographic
+characteristics of the researchers who compose those areas. To capture
+the patterning of subfield membership and its relation to the status
+ordering displayed above, Figure 2 displays results from
+multidimensional scaling (MDS) of the subfield-by-subfield co-membership
+matrix created by the ASA. Subfields that share many members are
+positioned close together while subfields that share few are located far
+apart.
+
+Meaningful areas of inquiry are differentiated into regions of the MDS
+plot. On the right side, we see subfields concerned with politics and
+economy alongside several historical and theoretical subfields. These
+subfields are largely high status, with the exceptions of Peace and
+Environmental. But more strikingly, these subfields are all
+predominantly male.
+
+Directly below the political/economic cluster, we see three subfields
+that share a global economic focus (``Global'', ``Development,''
+``Labor''), and continuing to the bottom center of the plot, we see a
+concentration of subfields that focus on race and racial minorities.
+Continuing clockwise, we find subfields that are related to health and
+demography as well as sex, gender, and education. These sections on the
+bottom and left side of the field, along with the race-related
+subfields, are markedly more feminized than the political and economic
+subfields on the right. We also see that, with a few exceptions, these
+subfields exhibit either medium or low status scores.
+
+\textbf{Figure 2.} Results from multidimensional scaling (MDS) of
+subfield-by-subfield overlap matrix of shared membership in ASA
+sections.
+
+\includegraphics[width=5.56979in,height=5.45654in]{media/image1.png}
+
+Lastly, we see at the top of the figure a set of small, high status
+subfields that are all predominantly male. Taking the field as a whole,
+we can see a general tendency of increasing status and increasing
+proportion male as we move from the bottom left of the field to the top
+right. This pattern provides further evidence that scholars are not
+randomly or uniformly distributed between the discipline's subfields,
+but that certain subfields are dominated by men and high prestige
+departments while others are more feminized and more concentrated at
+lower prestige institutions.
+
+Next, we directly assess the apparent association between a subfield's
+status and its gender composition. Results are presented in Figure 3. In
+the left panel we see a clear, positive association between status and
+percent male across subfields. However, as we described above, there are
+numerous other characteristics of scholars and research areas that may
+similarly correspond to this status ordering. In the right panel of
+Figure 3 we plot the association between age and status and find that it
+is similarly positive and strong, with subfields that have older
+memberships being more tightly concentrated in high status departments.
+
+\textbf{Figure 3.} Associations of subfields' status scores with gender
+composition and age of members.
+
+\includegraphics[width=6.23417in,height=4.81597in]{media/image6.png}
+
+In Figure 4 we visualize the association between a subfield's status and
+its racial composition. We examine each of the four largest racial
+identities individually. In the first panel we map the relationship
+between subfield status and percent membership white, and find it to be
+negative but non-significant. The next three panels show the
+associations between subfield status and percent African American,
+percent Asian, and percent Hispanic/Latino(a), respectively. There is
+one subfield for each racial group that appears as an outlier in its
+respective analysis: Race \& Ethnicity is 25\% African American, Asia
+and Asian Americans is 69\% Asian, and Latina/o sociology is 51\%
+Hispanic/Latino(a). Because associations could be strongly influenced by
+these single outliers, for each of these subpopulations we display the
+line of best fit including and excluding the respective outlier.
+
+\textbf{Figure 4.} Associations between racial composition variables and
+status of subfields.
+
+\includegraphics[width=6.19271in,height=6.19271in]{media/image3.png}
+
+In the top right panel, we see a clear, negative association between
+subfield status and percent African American membership. This
+association is attenuated by the inclusion of the moderately high status
+``Race \& Ethnicity'' subfield, but retains its negative direction. By
+contrast, we see that percent Asian membership has a strongly positive
+association with subfield status, but is slightly dampened by inclusion
+of the Asia and Asian Americans subfield. Percent Hispanic/Latino(a)
+shows no meaningful association with status regardless of the inclusion
+of the outlying subfield.
+
+Having analyzed the relationships between subfield status and the
+socio-demographic attributes of the researchers in the subfield's
+researchers, we now shift to analyzing how scholarly characteristics of
+the subfield itself relate to status. Figure 5 displays the associations
+of status with the theoretical/practical orientation of the subfield and
+with the quantitative/qualitative tendency of the field. We see a strong
+association between theoretical orientation and status, such that more
+theoretically-inclined subfields (i.e. those with greater co-occurrence
+with Theory) tend to be represented in higher status departments than
+more practically-oriented subfields (i.e. those with greater
+co-occurrences with Sociological Practice and Public Sociology). By
+contrast, there is no meaningful association between the
+qualitative/quantitative orientation of the subfield and its status.
+Thus, while the ``scientistic'' nature of quantitative social science
+may still accrue various benefits to practitioners, such as improved
+access to large grants or recognition by a broader scientific community,
+it is not associated with placement in higher prestige sociology
+deparments. Rather, our evidence suggests that within quantitative and
+qualitative domains, select subfields are highly represented by elite
+departments while others are underrepresented.
+
+\textbf{Figure 5.} Associations of subfield status with theoretical and
+quantitative orientations.
+
+\includegraphics[width=6.5in,height=3.90278in]{media/image4.png}
+
+Having established several bivariate associations, we next use multiple
+regression models to assess the independent effects of each attribute.
+Due to the small number of cases available for analysis, we avoid
+fitting models with the full battery of independent variables. Instead,
+we introduce related variables together in sets, then fit a ``full
+model'' containing only those measures found to have significant
+independent effects in earlier models. Results are presented in Table 1.
+
+\includegraphics[width=6.15724in,height=5.28542in]{media/image5.png}
+
+The first model of Table 1 shows the adjusted effects of percent male
+and mean age on subfield status. While both percent male and mean age
+showed strong correlations with status in our analyses above, we see in
+Model 1 that only percent male retains its significance when the two
+effects are assessed simultaneously. Older memberships also tend to be
+male dominated, and this finding suggests that it is only through its
+association with gender composition that age exhibits an association
+with status.
+
+In Model 2 we examine the adjusted effects for racial identities, with
+percent white as the excluded reference category. We find that none of
+the racial composition variables in Model 2 display independent effects.
+This is in part because Model 2 does not exclude the various outlier
+cases discussed above for each racial identity group. Because the
+associations between racial composition and subfield status require
+dropping outliers inconsistent with the overall trend, we consider these
+effects to be provisional and exclude them from our final model.
+
+We next examine the effects of theoretical/practical and
+quantitative/qualitative orientations on subfield status. We find that
+more theoretical subfields display higher status scores independent of
+quantitative/qualitative orientation. This is unsurprising, given that
+quantitative/qualitative orientation has only a weak association with
+status, and therefore little potential as a confounder. Model 4 displays
+the adjusted effects of the two variables found in earlier models to
+have independent effects on status: percent male and theoretical
+orientation. When assessed together, both variables retain their
+positive, significant associations with subfield status, suggesting that
+neither factor's connection to status is reducible to the other.
+Cumulatively, the results from all these models suggest that the
+distribution of subfields across the departmental status hierarchy can
+be largely predicted by their gender composition and
+theoretical/practical orientation, with more male-dominated and more
+theoretically-oriented subfields being disproportionately concentrated
+in high status departments. Model 4's R\textsuperscript{2} value of
+0.396 attests to the strength of these associations and the tightness of
+the relationship between the departmental status ordering, gender, and
+theoretical-orientation in the distribution of subfields.
+
+\textbf{\uline{Conclusion:}}
+
+This study takes the well-established finding that sociology departments
+are ordered by a stable status hierarchy (Burris 2004) and investigates
+the implications of this hierarchy for the discipline's subfields. We
+show that subfields are not uniformly distributed across departments,
+but that certain subfields are over-represented in elite departments
+while others are over-represented in low prestige institutions. We show
+that this ``status ordering of subfields'' is tightly linked to key
+characteristics of the subfields and their researchers. Most notably,
+subfields that are more male-dominated and theoretically-oriented are
+more highly represented at elite departments than those that are more
+feminized or practically-oriented.
+
+Although we are not able to assess the effects of status position on
+subfields, a close examination of our descriptive findings in light of
+well-documented characteristics of academic hierarchy point toward
+potential implications. First, subfields that are highly represented at
+elite universities are likely to benefit from the superior resources
+available to these institutions (Münch 2014). Elite universities have
+greater internal resources to fund research agendas and greater capacity
+to reduce researchers' teaching responsibilities. However, we note that
+some of the fields that routinely secure the greatest funds from
+external grants (Medical/Health, Aging) are relatively ``low status'' in
+the ordering we present here. Moreover, the highest status subfields --
+Ethnomethodology and Conversation Analysis, Rationality and Society,
+Economic Sociology and Comparative Historical sociology -- rarely
+acquire multi-million dollar grants to support large projects. The
+``high status subfields'' therefore should not be interpreted as the
+best resourced fields, but niches of theoretical elaboration that are
+privileged by high status institutions, often in spite of meager
+material prospects. Thus, concentration in high status departments can
+serve as an alternate mode for financing areas of research that, due to
+their low practical applicability, have little opportunity for external
+funding. However, we note that certain theoretical fields -- especially
+female-dominated ones like Sexualities, Bodies and Embodiment, and
+Emotions -- are under-represented at elite departments and hence lack
+both the external funding available to more practically-oriented fields
+of inquiry as well as the internal funding associated with elite
+institutions.
+
+The etiology of the subfield status order is similarly outside the scope
+of our empirical investigation, but patterns emerging from our findings
+point to some plausible causes. Much of the patterning we observe is
+explicable in economic terms. The most elite sociology departments
+primarily train students for academic research positions, often at
+comparably elite institutions. It is thus sustainable for these
+institutions to teach courses and train students in niche areas of
+theoretical inquiry that have a persistent home in the upper echelons of
+the academy. However, less elite institutions train graduate students
+for a variety of research and administrative positions outside of
+academia, and much of this work lies in applied areas such as health and
+criminology. Because they must prepare their students for careers
+outside of academia, these institutions privilege more applied fields of
+sociological work over the more purely theoretical.
+
+However, the gender bias that we observe cannot be so easily explained
+as a symptom of purely economic factors. Although female-dominated
+subfields do tend to be more practical, our multiple regression models
+suggest that gender composition retains an independent association with
+status even after controlling for subfields' theoretical/practical
+orientation. A vast literature from feminist science studies find that
+feminized approaches to knowledge production are commonly undervalued
+relative traditionally-masculine approaches (Anderson 1995; Keller
+1984). Reinforcing the formal and economic subordination of women and
+women's work are entrenched cultural biases against feminized objects
+and practices. These cultural and structural forces are deeply
+intertwined, mutually sustaining gender-based inequalities within
+science and across social institutions.
+
+This study's findings have important implications for understanding the
+academic production of sociological knowledge. In an idealized model of
+science, status is allocated to researchers and institutions in
+proportion to their contributions to the collective advancement of
+knowledge (Merton 1979 {[}1942{]}). Such an idealized model would not
+anticipate that research pertaining to practical social issues or
+research conducted primarily by women would be systematically relegated
+to institutions of lower prestige. Not only does this patterning suggest
+that researchers in practical and feminized fields lack the material and
+social advantages associated with holding faculty positions in elite
+departments, but that the fields of knowledge they pursue may inherit
+these associated disadvantages. Moreover, the character of research in a
+subfield may, in various subtle ways, reflect its position in the
+academic structure. In his classic study of French academia, Bourideu
+(1988) argues that the most radical and revolutionary voices of
+mid-century French social thought occupied relatively peripheral
+positions in the academic system, while the works of central actors were
+comparatively conservative. Nuanced details of the content of subfield
+research is beyond the scope of our study, but an overview of the status
+order we identify confirms that many of sociology's most critical
+subfields are disproportionately housed in lower prestige departments.
+This suggests the intriguing possibility that status position not only
+affects the resources and visibility afforded a subfield, but may steer
+its intellectual priorities and research directions.
+
+It is basic to the sociology of science that knowledge reflects the
+social conditions of its production. We focus here on sociology not
+because of its uniqueness, but to emphasize that such a system of
+stratification can persist even within an institution astutely aware of
+structural inequities and putatively committed to egalitarianism.
+Moreover, this exercise in self-criticism aims to clarify how entire
+fields of sociological knowledge are embedded differentially in a
+hierarchical academic order, which we believe is a critical first-step
+in understanding the relationship between the knowledge we produce as
+sociologists and the social positions we occupy in the academic
+structure. Creating a robust and truly reflexive sociology requires that
+we systematically interrogate the conditions of our own knowledge
+production, and illuminate the varied ways by which certain branches are
+elevated and others systematically marginalized.
+
+\textbf{\uline{References}}
+
+Abbott, Andrew. 2001. \emph{Chaos of Disciplines.} Chicago, IL:
+University of Chicago Press.
+
+Allen, D. (1997) ``The nursing-medical boundary: a negotiated order?''.
+\emph{Sociology of Health \& Illness}, Vol. 19: pp. 498-520.
+
+Anderson, Elizabeth. 1995. ``Feminist epistemology: An interpretation
+and a defense.'' \emph{Hypatia} 10(3): 50-84.
+
+American Sociological Association. (2020). \emph{Guide to Graduate
+Departments of Sociology.} Washington, DC: American Sociological
+Association
+
+Barbara F. Reskin and Denise D. Bielby. (2005) "A Sociological
+Perspective on Gender and Career Outcomes" \emph{The Journal of Economic
+Perspectives} Vol. 19 (No. 1): pp. 71-86
+
+Bonacich, Phillip. (1987). ``Power and Centrality: A Family of
+Measures.'' \emph{American Journal of Sociology} Vol. 92 (No. 5): pp.
+1170-1182
+
+Bourdieu, Pierre. 1984. \emph{Distinction: A Social Critique of the
+Judgment of Taste}. Harvard, MA: Harvard University Press.
+
+Bourdieu, Pierre. 1988. \emph{Homo Academicus}. Stanford, CA: Stanford
+University Press.
+
+Burris, Val. (2004) "The academic caste system: Prestige hierarchies in
+PhD exchange networks." \emph{American Sociological Review} Vol 69 (No.
+2): pp. 239-264.
+
+Collins, Harry. (1998) ``The Meaning of Data: Open and Closed Evidential
+Cultures in the Search for Gravitational Waves''. \emph{American Journal
+of Sociology}. Vol. 104 (No 2); pp. 293--338
+
+Gauchat, Gordon, and Kenneth T. Andrews. 2018. ``The cultural-cognitive
+mapping of scientific professions.'' \emph{American Sociological Review}
+83(3):567-595.
+
+Goffmann, Erving. (1977). ``The Arrangement between the Sexes.''
+\emph{Theory and Society} Vol. 4 (No. 3): pp. 301-331.
+
+Hofstra, Bas, Vivek V. Kulkarni, Sebastian Munoz-Najar Galvez, Bryan He,
+Dan Jurafsky, and Daniel A. McFarland. (2020). ``The
+Diversity--Innovation Paradox in Science.'' \emph{Proceedings of the
+National Academy of Sciences} 117(17):9284.
+
+Keller, Evelyn Fox. 1984. \emph{A Feeling for the Organism: The Life and
+Work of Barbara McClintock}. San
+
+Francisco: W. H. Freeman.
+
+Merton, Robert K. (1979 {[}1942{]}). ``The Normative Structure of
+Science.'' in \emph{The Sociology of Science}, edited by Norman W.
+Storer. Chicago, IL: University of Chicago Press\emph{.}
+
+Münch, Richard. 2014. \emph{Academic capitalism: Universities in the
+global struggle for excellence}. New York, New York: Routledge.
+
+National Science Foundation. 2020. \emph{Survey of Earned Doctorates}.
+Retrieved from
+\href{https://ncses.nsf.gov/pubs/nsf22300/data-tables}{\uline{https://ncses.nsf.gov/pubs/nsf22300/data-tables}}.
+
+Roos, Patricia A. (1977) "Occupational Feminization, Occupational
+Decline? Sociology\textquotesingle s Changing Sex Composition."
+\emph{The American Sociologist}, Vol. 28 (No. 1): pp. 75-88
+
+Sauder, Michael, and Wendy Nelson Espeland. "The discipline of rankings:
+Tight coupling and organizational change." \emph{American sociological
+review} 74.1 (2009): 63-82.
+
+Shapin, Steven. 1994. \emph{A Social History of Truth: Civility and
+Science in 17th Century England}. Chicago, IL: University of Chicago
+Press.
+
+Scelza, Janene, Roberta Spalter-Roth, and Olga Mayorova. 2011. ``A
+Decade of Change: ASA Membership from 2000 - 2010.'' Washington, DC:
+American Sociological Association.
+
+\uline{Appendix}
+
+\textbf{Table A1}: Subfield names and abbreviations.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3558}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1554}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3269}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1619}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Section
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Abbreviation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Section
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Abbreviation
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Aging and the Life Course
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Aging
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+International Migration
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Immig
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Altruism Morality and Social Solidarity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Altruism
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Labor and Labor Movements
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Labor
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Animals and Society
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Animals
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Latina/o Sociology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Latin
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Asia and Asian America
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Asia
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Law
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Law
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Body and Embodiment
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Body
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Marxist Sociology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Marx
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Children and Youth
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Youth
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mathematical Sociology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Math
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Collective Behavior and Social Movements
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+SocMvmt
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Medical Sociology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Medic
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Communication Information Technology and Media Sociology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Comms
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mental Health
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+MentHlth
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Community and Urban Sociology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Urban
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Methodology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Method
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Comparative Historical Sociology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+CompHist
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Organizations Occupations and Work
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Orgs
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Consumers and Consumption
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Consump
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Peace War and Social Conflict
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Peace
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Crime Law and Deviance
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Crim
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Political Economy of the World System
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+PolEcon
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Culture
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Culture
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Political Sociology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Pol
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Development
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Dev
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Population
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Pop
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Disability and Society
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Disab
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Qualitative Methodology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Qual
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Drugs and Society
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Drugs
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Quantitative Methodology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Quant
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Economic Sociology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Econ
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Race Gender and Class
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+RaceClassGen
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Education
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Edu
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Racial and Ethnic Minorities
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Race
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Emotions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Emot
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rationality and Society
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rational
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Environmental Sociology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Envir
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Religion
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Relig
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Ethnomethodology and Conversation Analysis
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ethno
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Science Knowledge and Technology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Science
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Evolution Biology and Society
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Bio
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Sex and Gender
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Gender
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Family
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Family
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Sexualities
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Sex
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Global and Transnational Sociology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Global
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Social Psychology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+SocPsych
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+History of Sociology and Social Thought
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+HistSoc
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Sociological Practice and Public Sociology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Practice
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Human Rights
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+HumRights
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Teaching and Learning in Sociology
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Teach
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Indigenous Peoples and Native Nations
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Indig
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Theory
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Theory
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Inequality Poverty and Mobility
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ineq
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
 
 \bibliographystyle{unsrtnat}
 \bibliography{references}  %%% Uncomment this line and comment out the ``thebibliography'' section below to use the external .bib file (using bibtex) .

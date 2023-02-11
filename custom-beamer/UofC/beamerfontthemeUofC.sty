@@ -1,0 +1,13 @@
+% For advanced fonts: access local OS X fonts
+\usepackage[no-math]{fontspec}		
+% This template uses typical OS X and Adobe fonts
+\defaultfontfeatures{Mapping=tex-text}	% This seems to be important for mapping glyphs properly
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily}
+
+\setmainfont{Minion Pro}  % Beamer ignores "main font" in favor of sans font
+\setmonofont{Iosevka}[Scale=0.8]
+\setbeamerfont{title}{family=\fontspec{Futura}} % font for title
+\setbeamerfont{frametitle}{family=\fontspec{Futura}} % font for title
+\setbeamerfont{title page}{family=\fontspec{Futura}}% for other elements on title page (author, date)
