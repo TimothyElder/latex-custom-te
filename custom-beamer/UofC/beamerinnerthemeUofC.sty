@@ -1,10 +1,8 @@
 \mode<presentation>
 
-
-
-\definecolor{UofCRed}{RGB}{128, 0, 0} % UBC Blue (primary)
-\definecolor{UofCGrey}{RGB}{118, 118, 118} % UBC Blue (primary)
-\definecolor{UofCGreen}{RGB}{62, 62, 35} % UBC Blue (primary)
+\definecolor{UofCRed}{RGB}{128, 0, 0} % UChicago Maroon (Primary)
+\definecolor{UofCGrey}{RGB}{118, 118, 118} % UChicago Grey (Secondary)
+\definecolor{UofCGreen}{RGB}{62, 62, 35} % UChicago Green (Secondary-Accent)
 
 \setbeamertemplate{background}{
   \begin{tikzpicture}
@@ -18,13 +16,10 @@
   \end{tikzpicture}
 }
 
-% 126 mm by 96 mm
-% 12.6 wide and 9.6 Tall
-
 % Title page
 \defbeamertemplate*{title page}{UofC}[1][]
 { 
-  %  \vskip4cm%
+    % Title
     \vspace{-1.65\baselineskip}
     \begin{minipage}[b][0.35\paperheight]{.75\textwidth}
         \vspace{\baselineskip}
@@ -32,6 +27,7 @@
         \usebeamercolor[white]{frametitle}
         \inserttitle
     \end{minipage}
+    
     % Subtitle
     \begin{minipage}[t][0.1\paperheight]{.60\textwidth}
       \usebeamerfont{subtitle}
@@ -40,8 +36,7 @@
   \end{minipage}
     \vskip4cm%
 
-
-% author
+% Author
 \begin{minipage}[t]{0.5\textwidth}
   \begin{flushright}
       \usebeamerfont{author}
@@ -50,7 +45,7 @@
   \end{flushright}
 \end{minipage}
 
-  % institute  
+% Institute  
 \begin{minipage}[t]{0.5\textwidth}
 \begin{flushright}
       \usebeamerfont{institute}
@@ -60,7 +55,6 @@
   \end{minipage}%
   \hfill%
   % Date
-  % \vspace*{\baselineskip}
   \begin{minipage}[t]{0.4\textwidth}
       \usebeamerfont{date}
       \usebeamercolor[white]{frametitle}

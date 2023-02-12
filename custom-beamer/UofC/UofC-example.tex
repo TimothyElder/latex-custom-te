@@ -1,190 +1,40 @@
+% DO NOT CALL FONTSPEC IN YOUR TEX
+
 \documentclass{beamer}
-
-\title{Interdependence and Difference}
-\subtitle{Niche Construction and the Study of Medicine}
-\author{Timothy Elder}
-\institute
-{
-  Department of Sociology \\
-  University of Chicago
-}
-
 \usetheme{UofC}
 \usefonttheme{UofC} % titling and headers
 \usefonttheme{serif} % This sets the main font to Minion Pro
+
+\title{There Is No Largest Prime Number}
+\institute[ISPN ’80]{27th International \\ Symposium of Prime Numbers}
+\author[Euclid]{Euclid of Alexandria \texttt{euclid@alexandria.edu}}
 
 \begin{document}
 
 \begin{frame}
 \titlepage
 \end{frame}
-\begin{frame}{The Workflow}
-    \begin{figure}
-    \includegraphics{/Users/timothyelder/Documents/plaintext_workshop/figures/workflow-wide-v2.png}
-    \end{figure}
+
+
+\begin{frame} 
+\frametitle{There Is No Largest Prime Number} 
+\framesubtitle{The proof uses \textit{reductio ad absurdum}.} 
+\begin{theorem}
+There is no largest prime number. \end{theorem} 
+\begin{enumerate} 
+\item<1-| alert@1> Suppose $p$ were the largest prime number. 
+\item<2-> Let $q$ be the product of the first $p$ numbers. 
+\item<3-> Then $q+1$ is not divisible by any of them. 
+\item<1-> But $q + 1$ is greater than $1$, thus divisible by some prime
+number not in the first $p$ numbers.
+\end{enumerate}
 \end{frame}
 
-\begin{frame}{The Workflow}{Explained}
-    The workflow looks complicated but it is actually straight forward. This is what we do: \newline
-    \begin{enumerate}
-        \pause
-        \item Write our documents in Markdown
-        \pause
-        \item Tell \texttt{pandoc} to typeset our document
-        \pause
-        \item \texttt{pandoc} uses LaTeX to create our document
-    \end{enumerate}
+\begin{frame}{A longer title}
+\begin{itemize}
+\item one
+\item two
+\end{itemize}
 \end{frame}
-
-\begin{frame}{The Workflow}{Simplified}
-    \begin{figure}
-    \includegraphics[width = \textwidth]{/Users/timothyelder/Documents/plaintext_workshop/figures/md2tex2pdf.png}
-    \end{figure}
-\end{frame}
-
-\begin{frame}
-    \Huge{MARKUP LANGUAGES} \newline
-    \large{\LaTeX}
-\end{frame}
-
-\begin{frame}{Markup Languages}{\LaTeX}
-
-    Symbolically represents:
-    \begin{itemize}
-        \item Style
-        \item Formatting
-        \item Relationships of Document Sections\newline
-    \end{itemize}
-
-    \footnotesize{e.g. HTML, XML, Markdown, \LaTeX}
-
-\end{frame}
-
-\begin{frame}[fragile]{Markup Languages}{\LaTeX}
-
-    \begin{columns}
-    
-    \begin{column}{0.48\textwidth}
-    \color{red}\rule{\linewidth}{4pt}
-    Styled
-    \begin{itemize}
-        \item \textit{Italicized}
-        \item \textbf{Bolded}
-        \item \underline{Underlined}
-    \end{itemize}
-    \end{column}
-    
-    \begin{column}{0.48\textwidth}
-    \color{blue}\rule{\linewidth}{4pt}
-    Plain Text
-    \begin{itemize}
-        \item \texttt{\textbackslash textit\{Italicized\}}
-        \item \texttt{\textbackslash textbf\{Bolded\}} 
-        \item \texttt{\textbackslash underline\{Underlined\}}
-    \end{itemize}
-    \end{column}
-    
-    \end{columns}
-
-\end{frame}
-
-\begin{frame}[fragile]{Markup Languages}{\LaTeX}
-    \begin{scriptsize}
-    \begin{lstlisting}
-        \begin{columns}
-            \begin{column}{0.48\textwidth}
-            \color{red}\rule{\linewidth}{4pt}
-            Styled
-            \begin{itemize}
-                \item \textit{Italicized}
-                \item \textbf{Bolded}
-                \item \underline{Underlined}
-            \end{itemize}
-            \end{column}
-            
-            \begin{column}{0.48\textwidth}
-            \color{blue}\rule{\linewidth}{4pt}
-            Plain Text
-            \begin{itemize}
-                \item \texttt{\textbackslash textit\{Italicized\}}
-                \item \texttt{\textbackslash textbf\{Bolded\}} 
-                \item \texttt{\textbackslash underline\{Underlined\}}
-            \end{itemize}
-            \end{column}
-        \end{columns}
-\end{lstlisting}
-\end{scriptsize}
-\end{frame}
-
-\begin{frame}{Markup Languages}{\LaTeX}
-    \begin{figure}
-    \includegraphics[width = \textwidth]{/Users/timothyelder/Documents/plaintext_workshop/figures/tex_eg.png}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Markup Languages}{\LaTeX}
-    Every LaTeX Document has Three Parts:
-    \begin{enumerate}
-        \item Macros and Libraries
-        \item Preamble
-        \item Body
-    \end{enumerate}
-\end{frame}
-
-\begin{frame}{Markup Languages}{\LaTeX}
-    Every LaTeX Document has Three Parts:
-    \begin{enumerate}
-        \item Macros and Libraries (Not Visible)
-        \item Preamble
-        \item Body
-    \end{enumerate}
-\end{frame}
-
-\begin{frame}
-    \Huge{MARKUP LANGUAGES} \newline
-    \large{Markdown}
-\end{frame}
-
-\begin{frame}{Markup Languages}{Markdown}
-    
-        \begin{description}[Other description]
-        \item[Source File]
-        A file which contains the data and recipe for creating some output. A
-        source file includes your Markdown Draft, LaTeX file, or python/R
-        scripts with data analysis. Think of it as the input that will produce
-        the output.
-        \end{description}
-    
-\end{frame}
-
-\begin{frame}{Markup Languages}{Markdown}
-    \begin{small}
-        \begin{table}[]
-            \begin{tabular}{ll}
-            \multicolumn{1}{c}{\textbf{Element}} & \multicolumn{1}{c}{\textbf{Markdown Syntax}}                                           \\ \hline
-            \multicolumn{1}{l|}{\Large{Heading}}         & \begin{tabular}[c]{@{}l@{}}\texttt{\# H1}\\ \texttt{\#\# H2}\\ \texttt{\#\#\# H3}\end{tabular}                    \\ \hline
-            \multicolumn{1}{l|}{\textbf{Bold}}   & \texttt{**bold text**}                                                                          \\ \hline
-            \multicolumn{1}{l|}{\textit{Italic}} & \texttt{*italicized text*}                                                                      \\ \hline
-            \multicolumn{1}{l|}{Blockquote}      & \textgreater \texttt{blockquote}                                                                \\ \hline
-            \multicolumn{1}{l|}{Ordered List}    & \begin{tabular}[c]{@{}l@{}}\texttt{1. First item}\\ \texttt{2. Second item}\\ \texttt{3. Third item}\end{tabular} \\ \hline
-            \multicolumn{1}{l|}{Unordered List}  & \begin{tabular}[c]{@{}l@{}}\texttt{- First item}\\ \texttt{- Second item}\\ \texttt{- Third item}\end{tabular}    \\ \hline
-            \multicolumn{1}{l|}{\texttt{Code}}   & \texttt{`code`}                                                                                 \\ \hline
-            \multicolumn{1}{l|}{Horizontal Rule} & \--\--\--                                                                                    \\ \hline
-            \multicolumn{1}{l|}{Link}            & \texttt{{[}title{]}(https://www.example.com)}                                                   \\ \hline
-            \multicolumn{1}{l|}{Image}           & \texttt{!{[}alt text{]}(image.jpg)}                                                             \\ \hline
-            \end{tabular}
-            \end{table}
-    \end{small}
-\end{frame}
-
-\begin{frame}
-    \Huge{THANKS} \newline
-    \large{For you to do:}
-    \begin{enumerate}
-        \item Sign up for the next Session, March 3rd
-        \item Sign up for office hours, Tuesdays
-    \end{enumerate}
-\end{frame}
-
 
 \end{document}
