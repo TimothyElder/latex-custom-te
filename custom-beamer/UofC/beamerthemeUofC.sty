@@ -9,6 +9,19 @@
 \usecolortheme{UofC}
 
 \setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{blocks}[rounded][shadow=false]  
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+% For Creating full slide graphics
+\makeatletter
+\newlength\beamerleftmargin
+\setlength\beamerleftmargin{\Gm@lmargin}
+\makeatother
+% defines full slide graphics command
+\newcommand{\fullframegraphic}[1]{
+    \begin{frame}[plain]
+        \hspace*{-\beamerleftmargin}%
+        \includegraphics[width=\paperwidth]{#1}
+    \end{frame} 
+}
 
 \mode<all>

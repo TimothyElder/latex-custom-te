@@ -63,6 +63,34 @@
   \vfill
 }
 
+\setbeamercolor{section title}{bg=UofCRed, fg=white}
+\setbeamercolor{subsection title}{bg=UofCGreen, fg=white}
+
+% Section Title Page
+\setbeamertemplate{section page}
+{
+    \begingroup
+    \begin{beamercolorbox}[sep=12pt,center]{section title}
+        \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+    \endgroup
+}
+
+% Subsection Title Page
+\setbeamertemplate{subsection page}
+{
+    \begingroup
+    \vfill
+    \begin{beamercolorbox}[sep=12pt,center,rounded=true]{section title}
+        \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+    \vspace*{10pt}
+    \begin{beamercolorbox}[sep=8pt,center,rounded=true]{subsection title}
+        \usebeamerfont{subsection title}\insertsubsection\par
+    \end{beamercolorbox}
+    \endgroup
+}
+
 % Items
 \setbeamertemplate{items}[square]
 \setbeamertemplate{sections/subsections in toc}[square]
