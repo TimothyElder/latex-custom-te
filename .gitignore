@@ -1,2 +1,17 @@
+# OS JUNK #
+###########
 **.DS_Store
 **.icloud
+
+# PDFS #
+########
+**.pdf
+
+# LATEX JUNK #
+##############
+**.aux
+**.fls
+**.fdb_latexmk
+**.xdv
+**.synctex.gz
+**.log
