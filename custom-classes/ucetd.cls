@@ -99,7 +99,6 @@
 \newcommand{\etdDefaultPointSize}{12pt}
 
 % Default line spacing
-%\newcommand{\etdDefaultSpacing}{\setstretch{1.37}}
 \newcommand{\etdDefaultSpacing}{\doublespacing}
 
 % Parent document class
