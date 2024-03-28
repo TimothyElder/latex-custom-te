@@ -1,0 +1,19 @@
+% For advanced fonts: access local OS X fonts
+\usepackage[no-math]{fontspec}		
+% This template uses typical OS X and Adobe fonts
+\defaultfontfeatures{Mapping=tex-text}	% This seems to be important for mapping glyphs properly
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily} % Custom font for listings environments
+
+\setmainfont{Dartmouth Ruzicka}  % Beamer ignores "main font" in favor of sans font
+\setmonofont{Iosevka}[Scale=0.8]
+\setbeamerfont{title}{family=\fontspec{National 2}} % font for title
+\setbeamerfont{frametitle}{family=\fontspec{National 2}} % font for title
+\setbeamerfont{title page}{family=\fontspec{National 2}}% for other elements on title page (author, date)
+
+% For Section Titles
+\setbeamerfont{section title}{family=\fontspec{Dartmouth Ruzicka}, size={\huge}}
+\setbeamerfont{subsection title}{family=\fontspec{Dartmouth Ruzicka}, size={\large}}
+
+

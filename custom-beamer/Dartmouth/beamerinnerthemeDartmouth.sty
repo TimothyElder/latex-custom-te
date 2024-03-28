@@ -1,0 +1,107 @@
+\mode<presentation>
+
+\definecolor{DartmouthGreen}{RGB}{0, 105, 62} % Dartmouth Green (Primary Color)
+\definecolor{RiverNavy}{RGB}{0, 60, 115} % Rivery Navy (Secondary)
+\definecolor{GraniteGray}{RGB}{66, 65, 65} % Granite Gray (Secondary
+
+\setbeamertemplate{background}{
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \fill[color=DartmouthGreen] (0,2) rectangle (\the\paperwidth,\the\paperheight);
+  \fill[color=RiverNavy] (0,0) rectangle(2.95,1.9);
+  \fill[color=GraniteGray] (3.05,0) rectangle(\the\paperwidth,1.9);
+  \ifnum\thepage>1\relax%
+   \fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+   \fi
+  \end{tikzpicture}
+}
+
+% Title page
+\defbeamertemplate*{title page}{Dartmouth}[1][]
+{ 
+    % Title
+    \vspace{-1.65\baselineskip}
+    \begin{minipage}[b][0.35\paperheight]{.80\textwidth}
+        \vspace{\baselineskip}
+        \usebeamerfont{title}
+        \usebeamercolor[white]{frametitle}
+        \inserttitle
+    \end{minipage}
+    
+    % Subtitle
+    \begin{minipage}[t][0.1\paperheight]{.75\textwidth}
+      \usebeamerfont{subtitle}
+      \usebeamercolor[white]{frametitle}
+      \insertsubtitle
+  \end{minipage}
+    \vskip4cm%
+
+% Author
+\begin{minipage}[t]{0.5\textwidth}
+  \begin{flushright}
+      \usebeamerfont{author}
+      \usebeamercolor[white]{frametitle}
+      \insertauthor
+  \end{flushright}
+\end{minipage}
+
+% Institute  
+\begin{minipage}[t]{0.5\textwidth}
+\begin{flushright}
+      \usebeamerfont{institute}
+      \usebeamercolor[white]{frametitle}
+      \insertinstitute
+\end{flushright}
+  \end{minipage}%
+  \hfill%
+  % Date
+  \begin{minipage}[t]{0.4\textwidth}
+      \usebeamerfont{date}
+      \usebeamercolor[white]{frametitle}
+      \insertdate
+  \end{minipage}
+  \vfill
+}
+
+\setbeamercolor{section title}{bg=DartmouthGreen, fg=white}
+\setbeamercolor{subsection title}{bg=RiverNavy, fg=white}
+
+% Section Title Page
+\setbeamertemplate{section page}
+{
+    \begingroup
+    \begin{beamercolorbox}[sep=12pt,center]{section title}
+        \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+    \endgroup
+}
+
+% Subsection Title Page
+\setbeamertemplate{subsection page}
+{
+    \begingroup
+    \vfill
+    \begin{beamercolorbox}[sep=12pt,center,rounded=true]{section title}
+        \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+    \vspace*{10pt}
+    \begin{beamercolorbox}[sep=8pt,center,rounded=true]{subsection title}
+        \usebeamerfont{subsection title}\insertsubsection\par
+    \end{beamercolorbox}
+    \endgroup
+}
+
+% No title slide with banner
+\newcommand{\notitleframe}[1]{
+  \begin{frame}
+  \frametitle{\mbox{}} % Transparent title
+  #1 % Slide content as argument
+  \end{frame}
+}
+
+% Items
+\setbeamertemplate{items}[square]
+\setbeamertemplate{sections/subsections in toc}[square]
+
+\mode
+<all>
