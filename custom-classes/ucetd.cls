@@ -46,6 +46,7 @@
 	\clearpage
 	% Switch to arabic numbers on pages
 	\pagenumbering{arabic}
+  \setcounter{page}{1}
 }
 
 % Commands to follow the title page
@@ -59,9 +60,8 @@
 \newcommand{\etdTitlePage} {
 	\begin{titlepage}
 		\begin{center}
-			\rule{0in}{0.55in} % Artificial extra [old=0.95in] margin. Why not vspace?
 			THE UNIVERSITY OF CHICAGO\\
-			\vspace{0.8in}
+			\vspace{1in}
 			\MakeUppercase{\@title}\\
 			\vspace{0.8in}
 			A DISSERTATION SUBMITTED TO\\
@@ -70,13 +70,13 @@
 			\MakeUppercase{\@degree}\\
 			\ \\
 			DEPARTMENT OF \MakeUppercase{\@department}\\
-			\vspace{0.8in}
+			\vspace{0.65in}
 			BY\\
 			\MakeUppercase{\@author}\\
-			\vspace{0.8in}
+			\vfill
 			CHICAGO, ILLINOIS\\
 			\MakeUppercase{\@date}
-			\vspace*{0.45in}
+			% \vspace*{0.45in}
 		\end{center}
 	\end{titlepage}
 }
