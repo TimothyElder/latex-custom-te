@@ -43,17 +43,21 @@ pdfpagelabels, bookmarksnumbered]{hyperref}
 
 %% Biblatex
 % \RequirePackage[authordate,
-                % backend=biber,
-                % babel=hyphen,
-                % bibencoding=inputenc,
-                % strict, isbn=false,
-                % uniquename=false]{biblatex} % biblatex setup
+%                 backend=biber,
+%                 babel=hyphen,
+%                 bibencoding=inputenc,
+%                 strict, isbn=false,
+%                 uniquename=false]{biblatex} % biblatex setup
+
 \RequirePackage[style=authoryear,
-            bibstyle=authoryear,
-            citestyle=authoryear,
-            natbib=true,
-            hyperref=true,
-            backend=biber, babel=hyphen, bibencoding=inputenc]{biblatex}
+                bibstyle=authoryear,
+                citestyle=authoryear,
+                natbib=true,
+                hyperref=true,
+                url=false,
+                backend=biber,
+                babel=hyphen,
+                bibencoding=inputenc]{biblatex}
 
 %% Fix biblatex's odd preference for using In: by default.
 \renewbibmacro{in:}{%
